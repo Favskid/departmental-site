@@ -26,7 +26,7 @@ const PhotoGallery = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6, ease: 'easeOut' }}
-        className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
+        className="px-4 sm:px-6 lg:px-8"
       >
         <h2 className="text-2xl font-bold text-blue-700 mb-6">Photo Gallery</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { useState, useRef } from 'react';
 import logo from '../assets/logo.png';
 
@@ -32,7 +33,9 @@ const Navbar = () => {
 
         {/* Desktop menu */}
         <div className="hidden sm:flex items-center gap-8 relative">
-          <a href="#contact" className="text-blue-700 hover:text-blue-900 font-medium">Contact Us</a>
+        <a href="#contact" className="text-blue-700 hover:text-blue-900 font-medium">Administration</a>
+        <Link to="/contact" className="text-blue-700 hover:text-blue-900 font-medium">Contact Us</Link>
+
 
           {/* Hover dropdown */}
           <div
@@ -80,7 +83,8 @@ const Navbar = () => {
       {menuOpen && (
         <div className="sm:hidden px-4 pb-4">
           <div className="flex flex-col bg-white border border-gray-200 shadow-md rounded-md p-4 gap-3">
-            <a href="#contact" className="text-blue-700 font-medium">Contact Us</a>
+          <a href="#contact" className="text-blue-700 font-medium">Adminstration</a>
+            <Link to="/contact" className="text-blue-700 font-medium">Contact Us</Link>
 
             <div>
               <button

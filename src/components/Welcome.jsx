@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 const Welcome = () => {
     return (
       <motion.div 
-        className="w-full bg-white p-6 md:p-10 shadow-lg mt-10 flex flex-col md:flex-row items-center"
+        className="w-full bg-white p-6 md:p-10 mt-10 flex flex-col md:flex-row items-center"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
