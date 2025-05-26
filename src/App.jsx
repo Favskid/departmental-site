@@ -5,6 +5,7 @@ import Welcome from './components/Welcome';
 import PhotoGallery from './components/PhotoGallery';
 import Footer from './components/Footer';
 import ContactUs from './pages/ContactUs';
+import Administration from './pages/Administration'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           </>
         } />
         <Route path="/contact" element={<ContactUs />} />
+        <Route path="/administration" element={<Administration />} />
       </Routes>
       <Footer />
     </div>
