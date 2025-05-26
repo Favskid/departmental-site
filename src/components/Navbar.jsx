@@ -33,7 +33,7 @@ const Navbar = () => {
 
         {/* Desktop menu */}
         <div className="hidden sm:flex items-center gap-8 relative">
-        <a href="#contact" className="text-blue-700 hover:text-blue-900 font-medium">Administration</a>
+        <a href="/administration" className="text-blue-700 hover:text-blue-900 font-medium">Administration</a>
         <Link to="/contact" className="text-blue-700 hover:text-blue-900 font-medium">Contact Us</Link>
 
 
