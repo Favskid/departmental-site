@@ -1,5 +1,5 @@
 import { FaFacebookF, FaInstagram, FaYoutube, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";  // X (Twitter) icon from FA6
+import { FaXTwitter } from "react-icons/fa6"; 
 
 const Footer = () => {
   return (
@@ -18,8 +18,11 @@ const Footer = () => {
         <div>
           <h2 className="text-lg font-semibold mb-3">Quick Links</h2>
           <ul className="space-y-2 text-sm text-blue-100">
+          <li>
+              <a href="/Administration" className="hover:text-white transition">Administration</a>
+            </li>
             <li>
-              <a href="#contact" className="hover:text-white transition">Contact Us</a>
+              <a href="/Contact" className="hover:text-white transition">Contact Us</a>
             </li>
             <li>
               <a href="#research" className="hover:text-white transition">Research Activities</a>
