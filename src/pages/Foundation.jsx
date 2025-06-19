@@ -82,6 +82,14 @@ const Foundation = () => {
                 <p className="text-gray-600 font-semibold text-lg">
                   DATE: 13TH - 27TH JULY, 2025
                 </p>
+                <a
+                  href="https://forms.gle/a2gwBEJNq8B3Fofx9" // <-- Replace with your actual Google Form URL
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block mt-4 px-6 py-2 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg shadow transition-colors duration-200"
+                >
+                  Register Here
+                </a>
               </div>
             </div>
           </div>
