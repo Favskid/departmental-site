@@ -33,7 +33,7 @@ const Navbar = () => {
 
         {/* Desktop menu */}
         <div className="hidden sm:flex items-center gap-8 relative">
-        <a href="/administration" className="text-blue-700 hover:text-blue-900 font-medium">Administration</a>
+        <Link to="/administration" className="text-blue-700 hover:text-blue-900 font-medium">Administration</Link>
         <Link to="/contact" className="text-blue-700 hover:text-blue-900 font-medium">Contact Us</Link>
 
 
@@ -57,7 +57,7 @@ const Navbar = () => {
 
             {isDropdownOpen && (
               <ul className="absolute top-full mt-2 right-0 w-64 bg-white shadow-lg rounded-md border border-gray-100 z-50">
-                <li><a href="/foundation" className="block px-4 py-2 text-blue-700 hover:bg-blue-50">Foundation Postgraduate (FPC)</a></li>
+                <li><Link to="/foundation" className="block px-4 py-2 text-blue-700 hover:bg-blue-50">Foundation Postgraduate (FPC)</Link></li>
                 <li><a href="#ioi" className="block px-4 py-2 text-blue-700 hover:bg-blue-50">Olympiad International Training (IOI) </a></li>
                 <li><a href="#olympiad" className="block px-4 py-2 text-blue-700 hover:bg-blue-50">Seminar Prsesntaions</a></li>
               </ul>
@@ -83,7 +83,7 @@ const Navbar = () => {
       {menuOpen && (
         <div className="sm:hidden px-4 pb-4">
           <div className="flex flex-col bg-white border border-gray-200 shadow-md rounded-md p-4 gap-3">
-          <a href="#contact" className="text-blue-700 font-medium">Adminstration</a>
+          <Link to="/administration" className="text-blue-700 font-medium">Adminstration</Link>
             <Link to="/contact" className="text-blue-700 font-medium">Contact Us</Link>
 
             <div>
@@ -104,7 +104,7 @@ const Navbar = () => {
 
               {subMenuOpen && (
                 <ul className="mt-2 pl-4 space-y-1 text-blue-600">
-                  <li><a href="#foundation">Foundation Postgraduate (FPC)</a></li>
+                  <li><Link to="/foundation">Foundation Postgraduate (FPC)</Link></li>
                   <li><a href="#ioi">Olympiad in Informatics Training (IOI)</a></li>
                   <li><a href="#olympiad">Seminar</a></li>
                 </ul>
