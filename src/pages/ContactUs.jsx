@@ -87,7 +87,7 @@ const ContactUs = () => {
               </div>
               <div>
                 <h3 className="font-semibold text-gray-800">Email</h3>
-                <p className="text-gray-600">info@example.com</p>
+                <p className="text-gray-600">compsci.nmc@gmail.com</p>
                 <p className="text-gray-500 text-sm mt-1">Response within 24 hours</p>
               </div>
             </motion.div>
@@ -101,7 +101,7 @@ const ContactUs = () => {
               </div>
               <div>
                 <h3 className="font-semibold text-gray-800">Address</h3>
-                <p className="text-gray-600">National Mathematical Centre, Kwali Abuja</p>
+                <p className="text-gray-600">Kaduna-Lokoja Express way, Sheda Kwali, Abuja Nigeria.</p>
                 <a 
                   href="https://maps.app.goo.gl/1CVVk2pM2JitHDBb8" 
                   target="_blank" 
@@ -125,8 +125,8 @@ const ContactUs = () => {
               </div>
               <div>
                 <h3 className="font-semibold text-gray-800">Website</h3>
-                <p className="text-gray-600">www.example.com</p>
-                <p className="text-gray-500 text-sm mt-1">Visit our knowledge base</p>
+                <p className="text-gray-600">nmc.edu.ng</p>
+                <p className="text-gray-500 text-sm mt-1">Mathematical Sciences.</p>
               </div>
             </motion.div>
           </div>

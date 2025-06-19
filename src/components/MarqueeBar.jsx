@@ -6,7 +6,7 @@ const MarqueeBar = () => {
   if (!visible) return null;
 
   return (
-    <div className="bg-blue-600 text-white text-sm font-medium py-2 px-4 w-full overflow-hidden relative">
+    <div className="bg-blue-600 text-white text-sm font-big py-4 px-4 w-full overflow-hidden relative">
       {/* Close Button */}
       <button
         onClick={() => setVisible(false)}
@@ -17,8 +17,8 @@ const MarqueeBar = () => {
       </button>
 
       {/* Scrolling text */}
-      <div className="whitespace-nowrap animate-marquee">
-        🚨 Attention! Admissions for 2025 are now open. Visit the portal to apply. | 🧠 New research tracks launching soon! | 🏅 IOI Training Bootcamp starts June 10th!
+      <div className="whitespace-nowrap animate-marquee text-lg font-medium">
+        🚨 Foundation postgraduate course in data science and database systems: APPLICATION TO NATIONAL DEVELOPMENT Starts 13th - 27th July, 2025 ! | 🧠 New research tracks launching soon! | 🏅 IOI Training Bootcamp starts soon!
       </div>
     </div>
   );

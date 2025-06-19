@@ -4,6 +4,12 @@ import { FaFacebook, FaTwitter, FaInstagram, FaHome, FaChevronRight } from 'reac
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import hod from '../assets/hod_picture.jpg';
+import secretary from '../assets/secretary.png';
+import research4 from '../assets/research4.jpg'; 
+import research2 from '../assets/research2.jpg';
+import research1 from '../assets/research1.jpg';
+import registrar from '../assets/registrar.jpg';
+
 
 const Administration = () => {
   const staffMembers = [
@@ -17,49 +23,48 @@ const Administration = () => {
     },
     {
       id: 2,
-      name: "Michael Chen",
-      title: "Operations Manager",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
-      email: "michael.chen@company.com",
-      phone: "+1 (555) 234-5678"
+      name: "Nwagbo Mercy Uchechi",
+      title: "Principal Personal Secretary",
+      image: secretary,
+      email: "umnwagbo@nmc.edu.ng",
+      phone: "+234 (80) 6241-6451 "
     },
     {
       id: 3,
-      name: "Emily Rodriguez",
-      title: "HR Director",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face",
-      email: "emily.rodriguez@company.com",
-      phone: "+1 (555) 345-6789"
+      name: "Victoria Kidams",
+      title: "Principal Assistant Registrar",
+      image: registrar,
+      email: "victoriakidams@gmail.com",
+      phone: "+234 (90) 1705-1155"
     },
     {
       id: 4,
-      name: "David Thompson",
-      title: "Finance Manager",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
-      email: "david.thompson@company.com",
-      phone: "+1 (555) 456-7890"
+      name: "Rimdams victor",
+      title: "Research fellow II",
+      image: research2,
+      email: "fisho4jos@gmail.com",
+      phone: "+234 (80) 6157-4069"
     },
     {
       id: 5,
-      name: "Lisa Wang",
-      title: "Administrative Assistant",
-      image: "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=400&h=400&fit=crop&crop=face",
-      email: "lisa.wang@company.com",
-      phone: "+1 (555) 567-8901"
+      name: "Nriagu Chukwunonso",
+      title: "Assistant Research Fellow",
+      image: research4,
+      email: "conriagu@yahoo.com",
+      phone: "+234 (80) 6400-1350"
     },
     {
       id: 6,
-      name: "James Wilson",
-      title: "IT Administrator",
-      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=face",
-      email: "james.wilson@company.com",
-      phone: "+1 (555) 678-9012"
+      name: "Oluwakemi Oduwole",
+      title: "Reseach Fellow II",
+      image: research1,
+      email: "ooduwole@nmc.edu.ng",
+      phone: "+234 (80) 3857-2387"
     },
     {
       id: 7,
       name: "Maria Garcia",
       title: "Communications Lead",
-      image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=400&h=400&fit=crop&crop=face",
       email: "maria.garcia@company.com",
       phone: "+1 (555) 789-0123"
     },
@@ -67,7 +72,6 @@ const Administration = () => {
       id: 8,
       name: "Robert Kim",
       title: "Security Officer",
-      image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=400&fit=crop&crop=face",
       email: "robert.kim@company.com",
       phone: "+1 (555) 890-1234"
     },
@@ -75,7 +79,6 @@ const Administration = () => {
       id: 9,
       name: "Jennifer Brown",
       title: "Project Coordinator",
-      image: "https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?w=400&h=400&fit=crop&crop=face",
       email: "jennifer.brown@company.com",
       phone: "+1 (555) 901-2345"
     },
@@ -83,7 +86,6 @@ const Administration = () => {
       id: 10,
       name: "Alex Morgan",
       title: "Data Analyst",
-      image: "https://images.unsplash.com/photo-1507591064344-4c6ce005b128?w=400&h=400&fit=crop&crop=face",
       email: "alex.morgan@company.com",
       phone: "+1 (555) 012-3456"
     },
@@ -91,7 +93,6 @@ const Administration = () => {
       id: 11,
       name: "Rachel Davis",
       title: "Executive Secretary",
-      image: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=400&h=400&fit=crop&crop=face",
       email: "rachel.davis@company.com",
       phone: "+1 (555) 123-4567"
     },
@@ -99,7 +100,6 @@ const Administration = () => {
       id: 12,
       name: "Kevin Lee",
       title: "Facilities Manager",
-      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop&crop=face",
       email: "kevin.lee@company.com",
       phone: "+1 (555) 234-5678"
     }

@@ -9,7 +9,7 @@ const Footer = () => {
         {/* About Section */}
         <div>
           <h2 className="text-lg font-semibold mb-3">About Us</h2>
-          <p className="text-sm leading-relaxed text-blue-100">
+          <p className="text-sm leading-relaxed text-blue-100 font-bold">
             We are committed to advancing the frontiers of computer science through training, research, and innovation in Kwali, Abuja.
           </p>
         </div>
@@ -17,8 +17,8 @@ const Footer = () => {
         {/* Quick Links */}
         <div>
           <h2 className="text-lg font-semibold mb-3">Quick Links</h2>
-          <ul className="space-y-2 text-sm text-blue-100">
-          <li>
+          <ul className="space-y-2 text-sm text-blue-100 font-bold">
+            <li>
               <a href="/Administration" className="hover:text-white transition">Administration</a>
             </li>
             <li>
@@ -33,7 +33,7 @@ const Footer = () => {
         {/* Social Media */}
         <div>
           <h2 className="text-lg font-semibold mb-3">Follow Us</h2>
-          <div className="flex gap-4 text-xl text-blue-100">
+          <div className="flex gap-4 text-xl text-blue-100 font-bold">
             <a href="#" className="hover:text-white"><FaFacebookF /></a>
             <a href="#" className="hover:text-white"><FaInstagram /></a>
             <a href="#" className="hover:text-white"><FaYoutube /></a>
@@ -44,14 +44,14 @@ const Footer = () => {
         {/* Contact Info */}
         <div>
           <h2 className="text-lg font-semibold mb-3">Contact Info</h2>
-          <p className="text-sm text-blue-100 mb-2">
-            <strong>Address:</strong> Kwali, Abuja, Nigeria
+          <p className="text-sm text-blue-100 mb-2 font-bold">
+            <strong>Address:</strong> Kaduna-Lokoja Express way, Sheda Kwali, Abuja Nigeria.
           </p>
-          <p className="flex items-center gap-2 text-sm text-blue-100 mb-1">
-            <FaPhoneAlt /> +1 (234) 567-8901
+          <p className="flex items-center gap-2 text-sm text-blue-100 mb-1 font-bold">
+            <FaPhoneAlt /> +234 (80) 6968-0153
           </p>
           <p className="flex items-center gap-2 text-sm text-blue-100">
-            <FaEnvelope /> info@example.com
+            <FaEnvelope /> compsci.nmc@gmail.com
           </p>
         </div>
       </div>

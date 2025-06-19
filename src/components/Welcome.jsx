@@ -20,13 +20,11 @@ const Welcome = () => {
           <h1 className="text-2xl font-bold text-[#003087] mb-2 font-poppins">
             Welcome Message From The HOD
           </h1>
-          <h2 className="text-lg text-[#003087] mb-1 font-poppins">Computer Science Department</h2>
-          <h2 className="text-lg text-[#003087] mb-4 font-poppins">
-            The Centre Of Service, Intellectualism, Optimism, and Transparency
-          </h2>
+          <h2 className="text-lg text-[#003087] mb-1 font-poppins">Computer Science Programme</h2>
+          <h2 className="text-lg text-[#003087] mb-4 font-poppins ">Oluchi Jennie Bamidele</h2>
           <p className="text-gray-700 text-sm leading-relaxed font-inter">
-            <strong>Motto:</strong> Service, Intellectualism, Optimism, and Transparency<br /><br />
-            Computer Science programme, The National Mathematical Centre (NMC) is known for its role in promoting and developing mathematical sciences in Nigeria, particularly at all levels of education. It's a key institution for training and developing personnel in mathematical sciences, fostering research, and encouraging interest in mathematics among young people. 
+            <strong>Motto:</strong>International Centre Of Excellence<br /><br />
+            Computer Science programme, The National Mathematical Centre (NMC) is known for its role in promoting and developing computer science in Nigeria, particularly at all levels of education. It's a key institution for training and developing personnel in mathematical sciences, fostering research, and encouraging interest in mathematics among young people. 
           </p>
     
           <a

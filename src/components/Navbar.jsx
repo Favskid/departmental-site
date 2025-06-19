@@ -23,13 +23,13 @@ const Navbar = () => {
     <nav className="w-full bg-white shadow-sm z-50 relative">
       <div className="flex items-center justify-between px-4 sm:px-8 py-4 relative">
         {/* Logo */}
-        <div className="flex items-center gap-3">
+        <Link to="/" className="flex items-center gap-3">
           <img src={logo} alt="Logo" className="h-12 sm:h-14" />
           <div>
-            <h1 className="text-blue-500 font-bold text-base sm:text-lg">Computer Science Programme</h1>
-            <p className="text-blue-500 text-xs sm:text-sm text-gray-500">Kwali, Abuja</p>
+            <h1 className="text-blue-500 font-bold text-base sm:text-lg">National Mathematical Centre</h1>
+            <p className="text-blue-500 font-bold text-xs sm:text-sm text-gray-500">Computer Science Programme</p>
           </div>
-        </div>
+        </Link>
 
         {/* Desktop menu */}
         <div className="hidden sm:flex items-center gap-8 relative">
@@ -57,9 +57,9 @@ const Navbar = () => {
 
             {isDropdownOpen && (
               <ul className="absolute top-full mt-2 right-0 w-64 bg-white shadow-lg rounded-md border border-gray-100 z-50">
-                <li><a href="#foundation" className="block px-4 py-2 text-blue-700 hover:bg-blue-50">Foundation Postgraduate</a></li>
-                <li><a href="#ioi" className="block px-4 py-2 text-blue-700 hover:bg-blue-50">IOI Training</a></li>
-                <li><a href="#olympiad" className="block px-4 py-2 text-blue-700 hover:bg-blue-50">Olympiad International Training</a></li>
+                <li><a href="/foundation" className="block px-4 py-2 text-blue-700 hover:bg-blue-50">Foundation Postgraduate (FPC)</a></li>
+                <li><a href="#ioi" className="block px-4 py-2 text-blue-700 hover:bg-blue-50">Olympiad International Training (IOI) </a></li>
+                <li><a href="#olympiad" className="block px-4 py-2 text-blue-700 hover:bg-blue-50">Seminar Prsesntaions</a></li>
               </ul>
             )}
           </div>
@@ -104,9 +104,9 @@ const Navbar = () => {
 
               {subMenuOpen && (
                 <ul className="mt-2 pl-4 space-y-1 text-blue-600">
-                  <li><a href="#foundation">Foundation Postgraduate</a></li>
-                  <li><a href="#ioi">IOI Training</a></li>
-                  <li><a href="#olympiad">Olympiad International Training</a></li>
+                  <li><a href="#foundation">Foundation Postgraduate (FPC)</a></li>
+                  <li><a href="#ioi">Olympiad in Informatics Training (IOI)</a></li>
+                  <li><a href="#olympiad">Seminar</a></li>
                 </ul>
               )}
             </div>
