@@ -26,8 +26,8 @@ const Navbar = () => {
         <Link to="/" className="flex items-center gap-3">
           <img src={logo} alt="Logo" className="h-12 sm:h-14" />
           <div>
-            <h1 className="text-blue-500 font-bold text-base sm:text-lg">National Mathematical Centre</h1>
-            <p className="text-blue-500 font-bold text-xs sm:text-sm text-gray-500">Computer Science Programme</p>
+            <h1 className="text-blue-500 font-bold text-sm sm:text-lg">National Mathematical Centre</h1>
+            <p className="text-blue-500 font-bold text-[10px]  sm:text-sm text-gray-500">Computer Science Programme</p>
           </div>
         </Link>
 
