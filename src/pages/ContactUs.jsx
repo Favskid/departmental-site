@@ -1,9 +1,53 @@
-import React from 'react';
+import React, { useState, useRef } from 'react';
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaGlobe, FaTwitter, FaFacebook, FaYoutube, FaLinkedin, FaChevronRight, FaHome } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import emailjs from '@emailjs/browser';
+import { EMAILJS_CONFIG } from '../config/emailjs';
 
 const ContactUs = () => {
+  const formRef = useRef();
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: ''
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState(null); // 'success', 'error', or null
+
+  const handleInputChange = (e) => {
+    const { id, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [id]: value
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus(null);
+
+    try {
+      const result = await emailjs.sendForm(
+        EMAILJS_CONFIG.SERVICE_ID,
+        EMAILJS_CONFIG.TEMPLATE_ID,
+        formRef.current,
+        EMAILJS_CONFIG.PUBLIC_KEY
+      );
+
+      console.log('Email sent successfully:', result.text);
+      setSubmitStatus('success');
+      setFormData({ name: '', email: '', subject: '', message: '' });
+    } catch (error) {
+      console.error('Email send failed:', error.text);
+      setSubmitStatus('error');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white">
       {/* Header Section */}
@@ -73,7 +117,7 @@ const ContactUs = () => {
               </div>
               <div>
                 <h3 className="font-semibold text-gray-800">Phone</h3>
-                <p className="text-gray-600">+123 456 7890</p>
+                <p className="text-gray-600">+234 (80) 6968-0153</p>
                 <p className="text-gray-500 text-sm mt-1">Mon-Fri: 9am-5pm</p>
               </div>
             </motion.div>
@@ -87,7 +131,7 @@ const ContactUs = () => {
               </div>
               <div>
                 <h3 className="font-semibold text-gray-800">Email</h3>
-                <p className="text-gray-600">compsci.nmc@gmail.com</p>
+                <p className="text-gray-600"><a href="mailto:compsci.nmc@gmail.com">compsci.nmc@gmail.com</a></p>
                 <p className="text-gray-500 text-sm mt-1">Response within 24 hours</p>
               </div>
             </motion.div>
@@ -125,8 +169,8 @@ const ContactUs = () => {
               </div>
               <div>
                 <h3 className="font-semibold text-gray-800">Website</h3>
-                <p className="text-gray-600">nmc.edu.ng</p>
-                <p className="text-gray-500 text-sm mt-1">Mathematical Sciences.</p>
+                <p className="text-gray-600"><a href="https://departmental-site.vercel.app/">Compsci.ng</a></p>
+                <p className="text-gray-500 text-sm mt-1">Computer Science Programme</p>
               </div>
             </motion.div>
           </div>
@@ -181,7 +225,7 @@ const ContactUs = () => {
           transition={{ duration: 0.6, delay: 0.7 }}
           className="flex-1"
         >
-          <form className="bg-white rounded-xl p-8 space-y-6 shadow-lg border border-blue-100">
+          <form ref={formRef} onSubmit={handleSubmit} className="bg-white rounded-xl p-8 space-y-6 shadow-lg border border-blue-100">
             <h2 className="text-blue-800 text-2xl font-bold mb-6">Send Us a Message</h2>
             
             <div className="space-y-5">
@@ -190,8 +234,11 @@ const ContactUs = () => {
                 <input
                   type="text"
                   id="name"
+                  name="name"
                   placeholder="Your name"
                   required
+                  value={formData.name}
+                  onChange={handleInputChange}
                   className="input input-bordered w-full focus:ring-2 focus:ring-blue-500 focus:border-blue-500 border-2 border-gray-200 h-12 rounded-lg px-4"
                 />
               </motion.div>
@@ -201,8 +248,11 @@ const ContactUs = () => {
                 <input
                   type="email"
                   id="email"
+                  name="email"
                   placeholder="Your email"
                   required
+                  value={formData.email}
+                  onChange={handleInputChange}
                   className="input input-bordered w-full focus:ring-2 focus:ring-blue-500 focus:border-blue-500 border-2 border-gray-200 h-12 rounded-lg px-4"
                 />
               </motion.div>
@@ -212,7 +262,10 @@ const ContactUs = () => {
                 <input
                   type="text"
                   id="subject"
+                  name="subject"
                   placeholder="Subject of your message"
+                  value={formData.subject}
+                  onChange={handleInputChange}
                   className="input input-bordered w-full focus:ring-2 focus:ring-blue-500 focus:border-blue-500 border-2 border-gray-200 h-12 rounded-lg px-4"
                 />
               </motion.div>
@@ -221,20 +274,54 @@ const ContactUs = () => {
                 <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">Message *</label>
                 <textarea
                   id="message"
+                  name="message"
                   placeholder="Your message"
                   rows="8"
                   required
+                  value={formData.message}
+                  onChange={handleInputChange}
                   className="textarea textarea-bordered w-full focus:ring-2 focus:ring-blue-500 focus:border-blue-500 border-2 border-gray-200 min-h-[200px] rounded-lg px-4 py-3"
                 ></textarea>
               </motion.div>
+
+              {/* Status Messages */}
+              {submitStatus === 'success' && (
+                <motion.div 
+                  initial={{ opacity: 0, y: -10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg"
+                >
+                  <p className="font-medium">Message sent successfully! We'll get back to you soon.</p>
+                </motion.div>
+              )}
+
+              {submitStatus === 'error' && (
+                <motion.div 
+                  initial={{ opacity: 0, y: -10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="p-4 bg-red-100 border border-red-400 text-red-700 rounded-lg"
+                >
+                  <p className="font-medium">Failed to send message. Please try again later.</p>
+                </motion.div>
+              )}
 
               <motion.button 
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 type="submit" 
-                className="btn w-full h-12 bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900 text-white border-none shadow-md transform hover:scale-[1.01] transition-all duration-300 rounded-lg"
+                disabled={isSubmitting}
+                className={`btn w-full h-12 bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900 text-white border-none shadow-md transform hover:scale-[1.01] transition-all duration-300 rounded-lg ${
+                  isSubmitting ? 'opacity-50 cursor-not-allowed' : ''
+                }`}
               >
-                Send Message
+                {isSubmitting ? (
+                  <div className="flex items-center justify-center">
+                    <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white mr-2"></div>
+                    Sending...
+                  </div>
+                ) : (
+                  'Send Message'
+                )}
               </motion.button>
             </div>
           </form>

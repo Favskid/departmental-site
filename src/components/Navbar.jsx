@@ -58,8 +58,8 @@ const Navbar = () => {
             {isDropdownOpen && (
               <ul className="absolute top-full mt-2 right-0 w-64 bg-white shadow-lg rounded-md border border-gray-100 z-50">
                 <li><Link to="/foundation" className="block px-4 py-2 text-blue-700 hover:bg-blue-50">Foundation Postgraduate (FPC)</Link></li>
-                <li><a href="#ioi" className="block px-4 py-2 text-blue-700 hover:bg-blue-50">Olympiad International Training (IOI) </a></li>
-                <li><a href="#olympiad" className="block px-4 py-2 text-blue-700 hover:bg-blue-50">Seminar Prsesntaions</a></li>
+                <li><Link to="/olympiad" className="block px-4 py-2 text-blue-700 hover:bg-blue-50">Olympiad International Training (IOI) </Link></li>
+                <li><Link to="/seminar" className="block px-4 py-2 text-blue-700 hover:bg-blue-50">Seminar Prsesntaions</Link></li>
               </ul>
             )}
           </div>
@@ -105,8 +105,8 @@ const Navbar = () => {
               {subMenuOpen && (
                 <ul className="mt-2 pl-4 space-y-1 text-blue-600">
                   <li><Link to="/foundation">Foundation Postgraduate (FPC)</Link></li>
-                  <li><a href="#ioi">Olympiad in Informatics Training (IOI)</a></li>
-                  <li><a href="#olympiad">Seminar</a></li>
+                  <li><Link to="/olympiad">Olympiad in Informatics Training (IOI)</Link></li>
+                  <li><Link to="/seminar">Seminar Presentaions</Link></li>
                 </ul>
               )}
             </div>

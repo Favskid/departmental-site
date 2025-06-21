@@ -1,12 +1,99 @@
-# React + Vite
+# Departmental Site
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive website for the Computer Science Department.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Responsive design with Tailwind CSS
+- Smooth animations with Framer Motion
+- Contact form with EmailJS integration
+- Photo gallery
+- Administration information
+- Research and foundation details
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+- Node.js (version 16 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd departmental-site
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Set up EmailJS configuration:
+```bash
+# Copy the template file
+cp src/config/emailjs.template.js src/config/emailjs.js
+
+# Edit the file with your EmailJS credentials
+# Follow the instructions in EMAILJS_SETUP.md
+```
+
+4. Start the development server:
+```bash
+npm run dev
+```
+
+5. Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+## EmailJS Setup
+
+The contact form uses EmailJS to send emails. Follow the detailed setup guide in `EMAILJS_SETUP.md` to configure your email service.
+
+**Important**: Never commit your `src/config/emailjs.js` file to Git as it contains sensitive credentials. The file is already added to `.gitignore`.
+
+## Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
+
+## Technologies Used
+
+- React 18
+- Vite
+- Tailwind CSS
+- DaisyUI
+- Framer Motion
+- React Router DOM
+- EmailJS
+- React Icons
+
+## Project Structure
+
+```
+src/
+├── components/     # Reusable components
+├── pages/         # Page components
+├── assets/        # Images and static files
+├── config/        # Configuration files (not committed to Git)
+└── main.jsx       # App entry point
+```
+
+## Deployment
+
+The site is configured for deployment on Vercel. Simply connect your repository to Vercel for automatic deployments.
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Test thoroughly
+5. Submit a pull request
+
+## License
+
+This project is licensed under the MIT License.

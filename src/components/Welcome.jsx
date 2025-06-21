@@ -28,7 +28,7 @@ const Welcome = () => {
           </p>
     
           <a
-            href="#"
+            href="/Readings"
             className="inline-block mt-6 px-5 py-2 bg-[#003087] hover:bg-[#0056b3] text-white rounded-md font-semibold transition font-inter"
           >
             Continue Reading →

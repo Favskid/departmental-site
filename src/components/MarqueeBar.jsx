@@ -18,10 +18,20 @@ const MarqueeBar = () => {
 
       {/* Scrolling text */}
       <div className="whitespace-nowrap animate-marquee text-lg font-medium">
-        🚨 Foundation postgraduate course in data science and database systems: APPLICATION TO NATIONAL DEVELOPMENT Starts 13th - 27th July, 2025 ! | 🧠 New research tracks launching soon! | 🏅 IOI Training Bootcamp starts soon!
+        🚨 Foundation postgraduate course in data science and database systems: APPLICATION TO NATIONAL DEVELOPMENT Starts 13th - 27th July, 2025!
+         Register here: <a 
+          href="https://forms.gle/a2gwBEJNq8B3Fofx9" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="hover:text-blue-800 underline font-semibold"
+        > APPLY HERE!</a>  
+          | 🧠 New research tracks launching soon! 
+         | 🏅 IOI Training Bootcamp starts soon!
       </div>
     </div>
   );
 };
 
 export default MarqueeBar;
+
+

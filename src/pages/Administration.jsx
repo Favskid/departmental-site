@@ -9,14 +9,15 @@ import research4 from '../assets/research4.jpg';
 import research2 from '../assets/research2.jpg';
 import research1 from '../assets/research1.jpg';
 import registrar from '../assets/registrar.jpg';
+import IT_1 from '../assets/IT_1.png';
 
 
 const Administration = () => {
   const staffMembers = [
     {
       id: 1,
-      name: "Sarah Johnson",
-      title: "Executive Director",
+      name: "Oluchi Jennie Bamidele",
+      title: "Head Of Department",
       image: hod,
       email: "sarah.johnson@company.com",
       phone: "+1 (555) 123-4567"
@@ -63,10 +64,11 @@ const Administration = () => {
     },
     {
       id: 7,
-      name: "Maria Garcia",
-      title: "Communications Lead",
-      email: "maria.garcia@company.com",
-      phone: "+1 (555) 789-0123"
+      name: "Oloda Oladipupo",
+      title: "IT Student",
+      image: IT_1,
+      email: "Favouroloda24@gmail.com",
+      phone: "+234 (90) 3735-4335"
     },
     {
       id: 8,
@@ -158,7 +160,7 @@ const Administration = () => {
         >
           {staffMembers.map((staff) => (
             <div key={staff.id} className="card bg-white shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-              <figure className="px-6 pt-6">
+              <figure className="px-6 pt-6 mb-4">
                 <div className="avatar">
                   <div className="w-32 h-32 rounded-full ring ring-blue-200 ring-offset-base-100 ring-offset-2">
                     <img

@@ -3,7 +3,7 @@ import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <footer className="bg-blue-900 text-white py-10 px-6 sm:px-10 mt-16">
+    <footer className="bg-blue-900 text-white py-10 px-6 sm:px-10">
       <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
         
         {/* About Section */}
@@ -25,7 +25,7 @@ const Footer = () => {
               <a href="/Contact" className="hover:text-white transition">Contact Us</a>
             </li>
             <li>
-              <a href="#research" className="hover:text-white transition">Research Activities</a>
+              <a href="/Foundation" className="hover:text-white transition">Foundation Postgraduate course</a>
             </li>
           </ul>
         </div>
@@ -34,10 +34,10 @@ const Footer = () => {
         <div>
           <h2 className="text-lg font-semibold mb-3">Follow Us</h2>
           <div className="flex gap-4 text-xl text-blue-100 font-bold">
-            <a href="#" className="hover:text-white"><FaFacebookF /></a>
+            <a href="https://www.facebook.com/nmc.compsci" className="hover:text-white"><FaFacebookF /></a>
             <a href="#" className="hover:text-white"><FaInstagram /></a>
             <a href="#" className="hover:text-white"><FaYoutube /></a>
-            <a href="#" className="hover:text-white"><FaXTwitter /></a>
+            <a href="https://x.com/NmcProgram?s=09" className="hover:text-white"><FaXTwitter /></a>
           </div>
         </div>
 
@@ -51,8 +51,7 @@ const Footer = () => {
             <FaPhoneAlt /> +234 (80) 6968-0153
           </p>
           <p className="flex items-center gap-2 text-sm text-blue-100">
-            <FaEnvelope /> compsci.nmc@gmail.com
-          </p>
+            <FaEnvelope /><a href="mailto:compsci.nmc@gmail.com">compsci.nmc@gmail.com</a></p>
         </div>
       </div>
 
