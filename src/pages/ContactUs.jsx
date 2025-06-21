@@ -169,8 +169,8 @@ const ContactUs = () => {
               </div>
               <div>
                 <h3 className="font-semibold text-gray-800">Website</h3>
-                <p className="text-gray-600"><a href="https://departmental-site.vercel.app/">Compsci.ng</a></p>
-                <p className="text-gray-500 text-sm mt-1">Computer Science Programme</p>
+                <p className="text-gray-600"><a href="https://nmc.edu.ng">NMC Website</a></p>
+                {/* <p className="text-gray-500 text-sm mt-1">follow the link</p> */}
               </div>
             </motion.div>
           </div>
@@ -181,7 +181,7 @@ const ContactUs = () => {
               <motion.a 
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
-                href="#" 
+                href="https://x.com/NmcProgram?s=09" 
                 aria-label="Twitter" 
                 className="bg-blue-100 hover:bg-blue-200 p-3 rounded-full text-blue-700 transition-colors duration-300"
               >
@@ -190,7 +190,7 @@ const ContactUs = () => {
               <motion.a 
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
-                href="#" 
+                href="https://www.facebook.com/nmc.compsci" 
                 aria-label="Facebook" 
                 className="bg-blue-100 hover:bg-blue-200 p-3 rounded-full text-blue-700 transition-colors duration-300"
               >

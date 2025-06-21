@@ -10,7 +10,7 @@ import research2 from '../assets/research2.jpg';
 import research1 from '../assets/research1.jpg';
 import registrar from '../assets/registrar.jpg';
 import IT_1 from '../assets/IT_1.png';
-
+import IT_2 from '../assets/IT_2.jpg'
 
 const Administration = () => {
   const staffMembers = [
@@ -19,8 +19,8 @@ const Administration = () => {
       name: "Oluchi Jennie Bamidele",
       title: "Head Of Department",
       image: hod,
-      email: "sarah.johnson@company.com",
-      phone: "+1 (555) 123-4567"
+      email: "jodamio@gmail.com",
+      phone: "+234 (90) 6968-0153"
     },
     {
       id: 2,
@@ -72,10 +72,11 @@ const Administration = () => {
     },
     {
       id: 8,
-      name: "Robert Kim",
-      title: "Security Officer",
-      email: "robert.kim@company.com",
-      phone: "+1 (555) 890-1234"
+      name: "Solomon Victoria",
+      title: "IT Student",
+      image: IT_2,
+      email: "awazivictoria@gmail.com",
+      phone: "+234 (90) 7376-4176"
     },
     {
       id: 9,
