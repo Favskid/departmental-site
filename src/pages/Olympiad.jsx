@@ -18,7 +18,7 @@ const Olympiad = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3, duration: 0.6 }}
-            className="text-5xl font-bold mb-4 text-white drop-shadow-md"
+            className="text-3xl md:text-5xl font-bold mb-4 text-white drop-shadow-md" // Changed text-5xl to text-3xl md:text-5xl
           >
             OLYMPIADS INTERNATIONAL TRAINING
           </motion.h1>
@@ -42,7 +42,7 @@ const Olympiad = () => {
               Home
             </Link>
             <FaChevronRight className="mx-2 text-xs text-gray-600" />
-            <span className="text-gray-800 font-semibold">Olympiads International Training (IOI) </span>
+            <span className="text-gray-800 font-semibold">Olympiads Training</span>
           </motion.nav>
         </div>
       </motion.div>

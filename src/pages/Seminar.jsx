@@ -13,12 +13,12 @@ const Seminar = () => {
         transition={{ duration: 0.6 }}
         className="bg-gradient-to-b from-blue-600 via-blue-100 to-white py-16 px-4"
       >
-        <div className="container mx-auto text-center">
+       <div className="container mx-auto text-center">
           <motion.h1 
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3, duration: 0.6 }}
-            className="text-5xl font-bold mb-4 text-white drop-shadow-md"
+            className="text-3xl md:text-5xl font-bold mb-4 text-white drop-shadow-md" // Changed text-5xl to text-3xl md:text-5xl
           >
             SEMINAR PRESENTATIONS
           </motion.h1>

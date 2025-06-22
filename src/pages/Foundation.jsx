@@ -21,7 +21,7 @@ const Foundation = () => {
             transition={{ delay: 0.3, duration: 0.6 }}
             className="text-5xl font-bold mb-4 text-white drop-shadow-md"
           >
-            Foundation Postgraduate
+            Foundation Postgraduate Course
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0 }}
@@ -43,7 +43,7 @@ const Foundation = () => {
               Home
             </Link>
             <FaChevronRight className="mx-2 text-xs text-gray-600" />
-            <span className="text-gray-800 font-semibold">Foundation</span>
+            <span className="text-gray-800 font-semibold">Foundation Postgraduate</span>
           </motion.nav>
         </div>
       </motion.div>
