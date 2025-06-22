@@ -13,6 +13,7 @@ import IT_1 from '../assets/IT_1.png';
 import IT_2 from '../assets/IT_2.jpg'
 import IT_3 from '../assets/IT_3.jpg'
 import IT_4 from '../assets/IT_4.jpg';
+import IT_5 from '../assets/IT_5.jpg';
 
 const Administration = () => {
   const staffMembers = [
@@ -98,10 +99,11 @@ const Administration = () => {
     },
     {
       id: 11,
-      name: "Rachel Davis",
-      title: "Executive Secretary",
-      email: "rachel.davis@company.com",
-      phone: "+1 (555) 123-4567"
+      name: "Abubukar Ibrahim Hussen",
+      title: "IT Student",
+      image: IT_5,
+      email: "thecoolbaap07@gmail.com",
+      phone: "+234 (91) 3586-2029"
     },
     {
       id: 12,
