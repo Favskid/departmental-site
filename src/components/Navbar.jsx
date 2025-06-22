@@ -83,8 +83,9 @@ const Navbar = () => {
       {menuOpen && (
         <div className="sm:hidden px-4 pb-4">
           <div className="flex flex-col bg-white border border-gray-200 shadow-md rounded-md p-4 gap-3">
-          <Link to="/administration" className="text-blue-700 font-medium">Adminstration</Link>
-            <Link to="/contact" className="text-blue-700 font-medium">Contact Us</Link>
+          {/* Added onClick to close menu */}
+          <Link to="/administration" className="text-blue-700 font-medium" onClick={() => setMenuOpen(false)}>Adminstration</Link>
+            <Link to="/contact" className="text-blue-700 font-medium" onClick={() => setMenuOpen(false)}>Contact Us</Link>
 
             <div>
               <button
@@ -104,9 +105,10 @@ const Navbar = () => {
 
               {subMenuOpen && (
                 <ul className="mt-2 pl-4 space-y-1 text-blue-600">
-                  <li><Link to="/foundation">Foundation Postgraduate (FPC)</Link></li>
-                  <li><Link to="/olympiad">Olympiad in Informatics Training (IOI)</Link></li>
-                  <li><Link to="/seminar">Seminar Presentaions</Link></li>
+                  {/* Added onClick to close menu */}
+                  <li><Link to="/foundation" onClick={() => setMenuOpen(false)}>Foundation Postgraduate (FPC)</Link></li>
+                  <li><Link to="/olympiad" onClick={() => setMenuOpen(false)}>Olympiad in Informatics Training (IOI)</Link></li>
+                  <li><Link to="/seminar" onClick={() => setMenuOpen(false)}>Seminar Presentaions</Link></li>
                 </ul>
               )}
             </div>
@@ -118,3 +120,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
