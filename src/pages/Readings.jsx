@@ -52,7 +52,7 @@ const Readings = () => {
         {/* HoD section */}
         <div className="flex justify-center py-10">
           <div className="bg-white rounded-lg shadow-md p-6 w-full md:max-w-none md:w-full mx-2 md:mx-6">
-            <div className="flex items-center gap-6">
+            <div className="flex flex-col md:flex-row gap-6">
               <img
                 src={hod}
                 alt="Hod picture"
