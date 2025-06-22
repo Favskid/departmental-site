@@ -11,6 +11,8 @@ import research1 from '../assets/research1.jpg';
 import registrar from '../assets/registrar.jpg';
 import IT_1 from '../assets/IT_1.png';
 import IT_2 from '../assets/IT_2.jpg'
+import IT_3 from '../assets/IT_3.jpg'
+import IT_4 from '../assets/IT_4.jpg';
 
 const Administration = () => {
   const staffMembers = [
@@ -67,7 +69,7 @@ const Administration = () => {
       name: "Oloda Oladipupo",
       title: "IT Student",
       image: IT_1,
-      email: "Favouroloda24@gmail.com",
+      email: "favouroloda24@gmail.com",
       phone: "+234 (90) 3735-4335"
     },
     {
@@ -80,17 +82,19 @@ const Administration = () => {
     },
     {
       id: 9,
-      name: "Jennifer Brown",
-      title: "Project Coordinator",
-      email: "jennifer.brown@company.com",
-      phone: "+1 (555) 901-2345"
+      name: "Onyedikachi",
+      title: "IT Student",
+      image: IT_3,
+      email: "onyedikachiu98@gmail.com",
+      phone: "+234 (81) 3628-7638"
     },
     {
       id: 10,
-      name: "Alex Morgan",
-      title: "Data Analyst",
-      email: "alex.morgan@company.com",
-      phone: "+1 (555) 012-3456"
+      name: "Husseni Abubukar Ibrahim",
+      title: "IT Student",
+      image: IT_4,
+      email: "abutijo.ib@gmail.com",
+      phone: "+234 (81) 2807-5064"
     },
     {
       id: 11,
