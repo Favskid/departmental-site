@@ -83,7 +83,7 @@ const Administration = () => {
     },
     {
       id: 9,
-      name: "Onyedikachi",
+      name: "Ugwu Onyedikachi",
       title: "IT Student",
       image: IT_3,
       email: "onyedikachiu98@gmail.com",
